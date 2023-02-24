@@ -45,6 +45,7 @@ function tail(print, args) {
 
 function curl(print, args) {
     utils.request(args, (error, response) => {
+        //con throw error no pasa el test
         error ? console.log(error) : print(response);
     })
 }
