@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
         res.end("json not found");
       } else {
         res.writeHead(200, { 'Content-type':'application/json'});
-        res.end(data); // porque no se usa JSON.stringify??? la lecture dice una cosa y la hw no la respeta...
+        res.end(data); // no uso JSON.stringify xq ya esta en formato json
       }
     });
     return;
