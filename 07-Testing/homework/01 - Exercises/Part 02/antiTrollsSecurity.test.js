@@ -9,6 +9,12 @@ describe('PARTE 02', () => {
          expect(antiTrollsSecurity('What are you, a communist?')).toBe(
             'Wht r y,  cmmnst?'
          );
+         expect(antiTrollsSecurity('Hello World!')).toBe(
+            'Hll Wrld!'
+         );
+         expect(antiTrollsSecurity('My name is...')).toBe(
+            'My nm s...'
+         );
       });
    });
 });
